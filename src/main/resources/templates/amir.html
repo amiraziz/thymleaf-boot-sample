@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.css}"/>
+    <script th:src="@{/webjars/jquery/1.11.1/jquery.min.js}"></script>
+    <script language="JavaScript" content="text/javascript">
+        var linkedinUrl = "https://www.linkedin.com/in/amir-azizkhaniroshan-90730769/";
+
+        function setLinkedInUrl() {
+            document.getElementById('linkedin_url').value = linkedinUrl;
+        }
+
+        window.onload = setLinkedInUrl;
+    </script>
+</head>
+<body class="container">
+<form action="#" th:action="@{/url}" method="GET">
+    <input type="hidden" name="url" id="linkedin_url" th:value="url"/>
+    <input type="submit" value="My LinkedIn" class="button"/>
+</form>
+</body>
+</html>

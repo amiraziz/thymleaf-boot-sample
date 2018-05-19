@@ -1,0 +1,14 @@
+spring:
+    application:
+        name: amir
+    datasource:
+        driverClassName: oracle.jdbc.driver.OracleDriver
+        url: jdbc:oracle:thin:@//dbcore:1521/coredb.hafiz-co.com
+        username: efmd
+        password: efmd
+    thymeleaf:
+          mode: HTML
+          check-template: false
+          cache: false
+server:
+    port: 9000
